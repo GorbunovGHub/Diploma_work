@@ -1,0 +1,66 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+li a {
+    color: #333;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* detail.html */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.post-details {
+    margin: 20px 0;
+}
+
+.post-header {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.post-info {
+    font-size: 1.2em;
+    color: #999;
+}
+
+.post-body {
+    white-space: pre-wrap; /* Позволяет сохранять перенос строк */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.back-link a {
+    color: #333;
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    color: #000;
+    text-decoration: underline;
+}

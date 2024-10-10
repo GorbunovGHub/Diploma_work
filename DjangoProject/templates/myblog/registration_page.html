@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA_Compatible" content="ie=edge">
+    <title>Регистрация пользователя</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <label for="username">Имя</label>
+    <input type="text" id="username" name="username" maxlength="30" required>
+
+    <label for="email">Электронная почта</label>
+    <input type="text" id="email" name="email" minlength="8" required>
+
+    <label for="password">Введите пароль</label>
+    <input type="text" id="password" name="password" minlength="8" required>
+
+    <label for="repeat_password">Повторите пароль</label>
+    <input type="text" id="repeat_password" name="repeat_password" required>
+
+    <button type="submit">Зарегистрироваться</button>
+
+</form>
+</body>
+</html>

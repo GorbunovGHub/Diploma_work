@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ post.title }}</h1>
+<p>Автор: {{ post.author }}</p>
+<p>Дата публикации: {{ post.created_date }}</p>
+<p>Обновлено: {{ post.updated_date }}</p>
+<hr/>
+<p>Тело поста:</p>
+<div style="white-space: pre-wrap;">{{ post.body }}</div>
+<br/>
+<a href="{% url 'index' %}">Главная</a>
+<a href="{% url 'delete' pk=post.pk %}">Удалить пост</a>
+<a href="{% url 'update' pk=post.pk %}">Обновить пост</a>
+{% endblock %}

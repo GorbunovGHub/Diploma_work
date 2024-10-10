@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Популярные записи</h1>
+<ul>
+    {% for post in posts %}
+    <li><a href="{% url 'detail' post.pk %}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+<form action="http://127.0.0.1:8000/create/" target="_self"><button class="btn">Создать пост</button></form>
+<form action="http://127.0.0.1:8000/registration/" target="_self"><button class="btn">Регистрация</button></form>
+{% endblock %}
+</body>
+</html>
